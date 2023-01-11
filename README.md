@@ -1,3 +1,5 @@
+# This is a fork of Ganymede with bug fixes
+
 # Ganymede
 
 An [Electron](https://electronjs.org/) app providing a lightweight wrapper around [Jupyter Lab](https://jupyterlab.readthedocs.io/en/stable/) to turn it into a desktop application.
