@@ -1,5 +1,7 @@
 {
   "name": "ganymede",
+  "email": "localhost@local.com",
+  "url":"url",
   "description": "Run Jupyter Lab as a native app",
   "version": "0.1.0",
   "main": "app/index.js",
@@ -15,7 +17,8 @@
     "compile": "electron-webpack",
     "dist": "yarn compile && electron-builder",
     "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null",
-    "locate": "electron-webpack dev --locate"
+    "locate": "electron-webpack dev --locate",
+    "publish": "electron-forge publish"
   },
   "build": {
     "appId": "io.dfm.Ganymede",
