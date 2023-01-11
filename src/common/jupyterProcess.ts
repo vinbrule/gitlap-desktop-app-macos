@@ -47,7 +47,7 @@ export class JupyterProcess {
 
     // Here we're monitoring stderr to find the URL for the server
     if (this.process.stderr) {
-      const urlRegEx = /(http:\/\/localhost:[0-9]+\/\?token=[a-f0-9]+)/;
+      const urlRegEx = /(http:\/\/localhost:[0-9]+\/lab\?token=[a-f0-9]+)/;
       let foundUrl = false;
       this.process.stderr.setEncoding("utf8");
       this.process.stderr.on("data", (data) => {
