@@ -18,7 +18,10 @@
     "dist": "yarn compile && electron-builder",
     "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null",
     "locate": "electron-webpack dev --locate",
-    "publish": "electron-forge publish"
+    "publish": "electron-forge publish",
+    "postinstall": "electron-builder install-app-deps",
+		"build": "electron-builder --mac --windows --linux",
+		"release": "electron-builder --mac --windows --linux --publish always"
   },
   "build": {
     "appId": "io.dfm.Ganymede",
